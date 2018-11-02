@@ -1,0 +1,22 @@
+<div class="container">
+  <%= form_with model: @sale, local: true do |f| %>
+    <%= f.label "Detalle de la venta" %>
+    <%= f.text_area :detail %>
+
+    <%= f.label "Cetagoria" %>
+    <%= f.text_field :category %>
+
+    <%= f.label "Valor de Producto" %>
+    <%= f.number_field :value %>
+
+    <%= f.label "Descuento del Producto" %>
+    <%= f.number_field :discount %>
+
+    <%= f.label "Exento de IVA" %>
+    <%= f.check_box :tax %>
+
+
+
+    <%= f.submit "Enviar" %>
+  <% end %>
+</div>
